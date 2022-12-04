@@ -126,7 +126,7 @@ p a:hover,
 	padding: 11px 0 20px;
 }
 #body div.header {
-	background: url(../images/bg-featured.png) repeat-x;
+	/* background: url(../images/bg-featured.png) repeat-x; */
 	height: 409px;
 }
 #body div.header div {
@@ -195,7 +195,7 @@ p a:hover,
 }
 #body div.header div div.section > a {
 	background: url(../images/interface.png) no-repeat 0 -62px;
-	color: #dc7b14;
+	/* color: #dc7b14; */
 	display: inline-block;
 	height: 37px;
 	font-family: 'Conv_BreeSerif-Regular';

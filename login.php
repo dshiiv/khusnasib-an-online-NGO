@@ -74,7 +74,10 @@
 					<input type="password" name="password" id="password" required>
 					<label>Confirm Password</label>
 					<input type="password" name="password" id="password1" required>
-					<input type="submit" value="Register">
+					<label>Security Question</label>
+					<input type="text" name="question" required>
+					<input type="text" name="answer" required placeholder="Answer">
+					<input type="submit" value="Register" style="background-color: cornflowerblue ; border-radius:8px ; color: black;">
 				</form>
 			</div>
 		</div>

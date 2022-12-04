@@ -80,8 +80,8 @@
 				</div>
 			</div>
 			<div class="sidebar">
-				<h2>Our targets are the groups who are below poverty line:-</h2>
-				<p>Children</p>
+				<h2>Events that took place:-</h2>
+				<!-- <p>Children</p>
 				<p>Women</p>
 				<p>Youth</p>
 				<p>Old age / Elderly people</p>
@@ -89,7 +89,8 @@
 				<p>Adolescents</p>
 				<p>Women / Self Help groups (SHGs)</p>
 				<p>Disabled persons</p>
-				<p>Tribals</p>
+				<p>Tribals</p> -->
+				<!-- <img src="" -->
 			</div>
 		</div>
 	</div>

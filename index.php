@@ -66,7 +66,7 @@ include("./includes/connection.php");
 					<h2><a href="gallery.php">gallery</a></h2>
 				</div>
 				<div class="news">
-					<h2>News</h2>
+					<h2>Upcoming Events</h2>
 					<ul>
 						<li>
 							<span class="date">Dec 2, 2022</span>

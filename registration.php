@@ -19,8 +19,10 @@
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$password = md5($_POST["password"]);
+	$question = $_POST["question"];
+	$answer = $_POST["answer"];
 
-	$sql = "INSERT INTO user_data(user_id,first_name,email,password) VALUES('".$user_id."','".$name."','".$email."','".$password."')";
+	$sql = "INSERT INTO user_data(user_id,first_name,email,password,security_que,answer) VALUES('".$user_id."','".$name."','".$email."','".$password."','".$question."','".$answer."')";
 	$q=mysqli_query($conn,$sql);
 	if($q == 1){
 		session_start();	
