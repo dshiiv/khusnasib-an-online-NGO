@@ -5,7 +5,7 @@ include("./includes/connection.php"); ?>
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logoicon-removebg-preview.png" />
 	<title>Profile - KhusNasib</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_form.css">

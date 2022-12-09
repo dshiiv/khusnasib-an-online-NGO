@@ -938,31 +938,29 @@ p a:hover,
 	text-indent: -99999px;
 }
 #footer div div ul li div a#facebook {
-	background: url(../images/icons.png) no-repeat;
+	background: url(../images/icons8-facebook-48.png);
+	background-size: cover;
+	/* background: url(../images/icons.png) no-repeat; */
 	height: 25px;
 	width: 26px;
 }
 #footer div div ul li div a#twitter {
-	background: url(../images/icons.png) no-repeat 0 -60px;
-	margin: 0 0 0 13px;
-	width: 38px;
+	background: url(../images/icons8-twitter-48.png);
+	/* background: url(../images/icons.png) no-repeat 0 -60px; */
+	background-size: cover;
+	margin: 0 0 0 18px;
+	height: 25px;
+	width: 26px;
 }
 #footer div div ul li div a#googleplus {
-	background: url(../images/icons.png) no-repeat 0 -122px;
+	/* background: url(../images/icons8-instagram-48.png) no-repeat 0 -122px; */
+	background: url(../images/icons8-instagram-48.png);
+	background-size: cover;
 	margin: 0 0 0 18px;
 	width: 26px;
 }
-#footer div div ul li div a#facebook:hover {
-	background: url(../images/icons.png) no-repeat 0 -25px;
-}
-#footer div div ul li div a#twitter:hover {
-	background: url(../images/icons.png) no-repeat 0 -86px;
-}
-#footer div div ul li div a#googleplus:hover {
-	background: url(../images/icons.png) no-repeat 0 -148px;
-}
 #footer p {
-	color: #acacac;
+	color: #43f0dc;
 	font-size: 12px;
 	padding: 0 0 25px;
 	text-align: center;

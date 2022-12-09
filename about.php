@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logoicon-removebg-preview.png" />
 	<title>About - KhusNasib</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>

@@ -7,7 +7,7 @@ include("./includes/connection.php");
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logoicon-removebg-preview.png" />
 	<title>KhusNasib</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -71,26 +71,35 @@ include("./includes/connection.php");
 						<li>
 							<span class="date">Dec 2, 2022</span>
 							<h3><a href="news.php">New Join of Children Foundations</a></h3>
-							<p>
-								More and more foundations are now joining with us. "Hope" is a new foundation which is now going to connect with us.
-							</p>
+							<marquee direction = "up" scrollamount="4">
+								<!-- More and more foundations are now joining with us. "Hope" is a new foundation which is now going to connect with us. -->
+								<p>Blood Donation.</p>
+
+								<p>Clothes Distribution.</p>
+
+								<p>Food Distribution.</p>
+
+								<p>Food for street animals.</p>
+
+
+							</marquee>
 						</li>
 						<li>
-							<span class="date">Dec 2, 2022</span>
+							<!-- <span class="date">Dec 2, 2022</span>
 							<h3><a href="news.php">Saved elders</a></h3>
 							<p>
 								some elder homes(read..)
-							</p>
+							</p> -->
 						</li>
 					</ul>
-					<span class="link"><a href="news.php">Go To News</a></span>
+					<span class="link"><a href="./event.php">Upcoming Events</a></span>
 				</div>
 				<div class="help">
 					<h2>How To Help</h2>
 					<a href="login.php"><img src="images/click-help.jpg" alt="Image"></a>
 					<h3><a href="login.php">on your single step</a></h3>
 					<p>
-						stay connected with us, we know the needs of pepole who are poor, disabled. get invloved with us and start helping pepole with your abilities
+						Stay connected with us, we know the needs of pepole who are poor, disabled and that are in need of Help. Get invloved with us and start helping people with your abilities.
 					</p>
 					<span class="link"><a href="login.php">Get Involved</a></span>
 				</div>

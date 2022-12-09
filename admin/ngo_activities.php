@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="../images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logoicon-removebg-preview.png" />
 	<title>Admin Panel - KhusNasib Charitable Trust</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style_form.css">
@@ -29,7 +29,7 @@
 		<div class="ngo_activities">
 			<div>
 				<a href="messages.php">Messages</a>
-				<a href="manage_ngo.php">NGO</a>
+				<a href="manage_ngo.php">ADD NGO</a>
 				<!-- <a href="manage_location.php">Locations</a> -->
 				<a href="manage_faq.php">FAQ</a>
 				<a href="reports.php">Reports</a>

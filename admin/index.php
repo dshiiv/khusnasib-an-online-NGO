@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="" />
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logoicon-removebg-preview.png" />
 	<title>Admin Login - KhusNasib  Charitable Trust</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style_form.css">

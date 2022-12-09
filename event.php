@@ -6,7 +6,7 @@ include("./includes/connection.php");
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logoicon-removebg-preview.png" />
 	<title>Events - KhusNasib</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -59,6 +59,10 @@ include("./includes/connection.php");
 						<div width="268px" height="365px">
 							<img class="image" src="<?php echo $fetch_products['image']; ?>" alt="image" width="100%" height="100%">
 							<p><?php echo $fetch_products['event_name']; ?></p>
+							<p><?php echo $fetch_products['event_description']; ?></p>
+							<p><?php echo $fetch_products['event_description']; ?></p>
+							<p><?php echo $fetch_products['event_description']; ?></p>
+							<p></p>
 						</div>
 				<?php
 					}

@@ -7,7 +7,7 @@ include("./includes/connection.php");
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="./images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logoicon-removebg-preview.png" />
 	<title>Admin Panel - KhusNasib Charitable Trust</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style_form.css">
@@ -20,6 +20,20 @@ include("./includes/connection.php");
 			});
 		});
 	</script>
+
+	<script>
+
+	var date = new Date();
+
+	var tdate = date.getDate();
+	var month = date.getMonth();
+	var year = date.getFullYear();
+
+	var minDate = year + "-" + month + "-" + tdate;
+
+	document.getElementById("event").setAttribute('min'.minDate)
+
+	</script>
 </head>
 
 <body>
@@ -30,7 +44,7 @@ include("./includes/connection.php");
 				<li><a href="home.php">Donations</a></li>
 				<li><a href="upload_media.php">Upload Media</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
-				<li class="current"><a>Events</a></li>
+				<li class="current"><a>Upcoming Events</a></li>
 				<li><a href="ngo_activities.php">NGO Activities</a></li>
 				<li class="log_btn"><a href="./logout.php">Logout</a></li>
 				<li class=""><a href="../index.php">Main</a></li>
@@ -47,7 +61,8 @@ include("./includes/connection.php");
 				<label>Description</label>
 				<textarea name="event_description" rows="5" required></textarea>
 				<label>date</label>
-				<input type="date" name="event_date" required min="2018-01-01" max="2050-12-12">
+				<!-- <input type="date" name="event_date" required min="2018-01-01" max="2050-12-12"> -->
+				<input type="date" id="event" name="event_date" required>
 				<label>time</label>
 				<input type="time" name="event_time" required>
 				<label>address</label>
@@ -72,8 +87,10 @@ include("./includes/connection.php");
 					<option value="">Select State First</option>
 				</select>
 				<label>duration</label>
-				<input type="text" name="event_duration" required>
-				<input type="submit" value="Add Event">
+				<input type="time" name="event_duration" required>
+
+				<input type="submit" value="Add Event" style="background-color: white ;">
+
 			</form>
 			<div class="stored">
 				<h4>Added Events</h4>
@@ -83,7 +100,7 @@ include("./includes/connection.php");
 				$result = mysqli_query($conn, $sql);
 				$count = 1;
 				while ($rs = mysqli_fetch_array($result)) {
-					if ($count <= 4) {
+					if ($count <= 1000) {
 				?>
 						<a>
 							<div>

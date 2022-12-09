@@ -7,10 +7,11 @@ include("./includes/connection.php");
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="./images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logoicon-removebg-preview.png" />
 	<title>Admin Panel - KhusNasib Charitable Trust</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style_form.css">
+	
 </head>
 
 <body>
@@ -19,7 +20,7 @@ include("./includes/connection.php");
 			<a href="index.php" id="logo"><img src="./images/khusnasib-logo.jpg" alt="logo"></a>
 			<ul>
 				<li><a href="home.php">Donations</a></li>
-				<li class="current"><a>Upload Media</a></li>
+				<li class="current"><a>Upload Events</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
 				<li><a href="events.php">Events</a></li>
 				<li><a href="ngo_activities.php">NGO Activities</a></li>
@@ -30,7 +31,7 @@ include("./includes/connection.php");
 	</div>
 	<div id="body">
 		<div class="admin_manages">
-			<h3>Upload Media</h3>
+			<h3>Events Held</h3>
 			<hr>
 			<form action="insert_media.php" method="post" enctype="multipart/form-data" class="user">
 				<label>Caption</label>
@@ -38,6 +39,9 @@ include("./includes/connection.php");
 				<input type='file' name='fileToUpload' required>
 				<label>Description</label>
 				<textarea rows="5" cols="35" name="description" required></textarea>
+				<label>Date & Time</label>
+				<input type="date" name="date" required min="2019-01-01">
+				<input type="time" name="time" required>
 				<input type='submit' value='Upload'>
 			</form>
 			<div class="stored">

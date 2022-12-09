@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Forgot Password - KhusNasib</title>
 
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logoicon-removebg-preview.png" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style_form.css">
 </head>
