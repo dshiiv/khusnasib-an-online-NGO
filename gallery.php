@@ -25,7 +25,7 @@ include("./includes/connection.php");
 				<?php
 				if (isset($_SESSION["user_id"])) {
 				?>
-					<li><a href="profile.php">profile</a></li>
+					<!-- <li><a href="profile.php">profile</a></li> -->
 					<li><a href="faq.php">FAQ</a></li>
 					<li><a href="donate.php">Donate</a></li>
 					<li class="log_btn"><a href="logout.php">Logout</a></li>
@@ -43,11 +43,10 @@ include("./includes/connection.php");
 	<div id="body">
 		<div id="gallery">
 			<div class="header">
-				<div>
-					<h2></h2>
-					<p>
-					</p>
-				</div>
+				<!-- <div>
+					<img src="./uploads/1671113539145-01.jpeg.jpg" height="250px" width="400px">
+				</div> -->
+				<img src="./uploads/1671113539145-01.jpeg.jpg" height="250px" width="400px">
 				<img src="./uploads/khusnasib.jpeg" height="250px" width="400px">
 			</div>
 			<div class="body">
@@ -60,6 +59,9 @@ include("./includes/connection.php");
 						<div width="268px" height="365px">
 							<img class="image" src="<?php echo $fetch_products['image']; ?>" alt="image" width="100%" height="100%">
 							<p><?php echo $fetch_products['caption']; ?></p>
+							<p><?php echo $fetch_products['description']; ?></p>
+							<p><?php echo $fetch_products['date']; ?></p>
+							<p><?php echo $fetch_products['time']; ?></p>
 						</div>
 				<?php
 					}

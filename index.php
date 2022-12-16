@@ -26,7 +26,7 @@ include("./includes/connection.php");
 				<?php
 				if (isset($_SESSION["user_id"])) {
 				?>
-					<li><a href="profile.php">profile</a></li>
+					<!-- <li><a href="profile.php">profile</a></li> -->
 					<li><a href="faq.php">FAQ</a></li>
 					<li><a href="donate.php">Donate</a></li>
 					<li class="log_btn"><a href="logout.php">Logout</a></li>
@@ -71,7 +71,7 @@ include("./includes/connection.php");
 						<li>
 							<span class="date">Dec 2, 2022</span>
 							<h3><a href="news.php">New Join of Children Foundations</a></h3>
-							<marquee direction = "up" scrollamount="4">
+							<marquee class="ucevents" direction = "up" scrollamount="2.5" onmouseover="this.stop();" onmouseout="this.start();">
 								<!-- More and more foundations are now joining with us. "Hope" is a new foundation which is now going to connect with us. -->
 								<p>Blood Donation.</p>
 

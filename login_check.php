@@ -5,6 +5,7 @@
 		$email = $_POST["email"];
 		$password = $_POST["password"];
 		
+		// $sql = "SELECT * FROM user_data WHERE email='".$email."' and password='".md5($password)."'";
 		$sql = "SELECT * FROM user_data WHERE email='".$email."' and password='".md5($password)."'";
 		$q = mysqli_query($conn,$sql);
 		if(mysqli_num_rows($q)==1){

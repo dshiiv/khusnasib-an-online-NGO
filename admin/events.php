@@ -60,11 +60,11 @@ include("./includes/connection.php");
 				<input type="text" name="event_name" required>
 				<label>Description</label>
 				<textarea name="event_description" rows="5" required></textarea>
-				<label>date</label>
+				<!-- <label>date</label> -->
 				<!-- <input type="date" name="event_date" required min="2018-01-01" max="2050-12-12"> -->
-				<input type="date" id="event" name="event_date" required>
+				<!-- <input type="date" id="event" name="event_date" required>
 				<label>time</label>
-				<input type="time" name="event_time" required>
+				<input type="time" name="event_time" required> -->
 				<label>address</label>
 				<textarea name="event_address" rows="3" required></textarea>
 				<label>Poster</label>
@@ -89,7 +89,7 @@ include("./includes/connection.php");
 				<label>duration</label>
 				<input type="time" name="event_duration" required>
 
-				<input type="submit" value="Add Event" style="background-color: white ;">
+				<input type="submit" value="Add Event" style="background-color: peachpuff ; border-radius: 8px;">
 
 			</form>
 			<div class="stored">

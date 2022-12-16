@@ -25,7 +25,7 @@ include("./includes/connection.php"); ?>
 				<?php
 				if (isset($_SESSION["user_id"])) {
 				?>
-					<li><a href="profile.php">Profile</a></li>
+					<!-- <li><a href="profile.php">Profile</a></li> -->
 					<li class="current"><a>FAQ</a></li>
 					<li class="log_btn"><a href="logout.php">Logout</a></li>
 				<?php

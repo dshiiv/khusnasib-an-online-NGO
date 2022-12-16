@@ -21,6 +21,8 @@
 	$description = $_POST["description"];
 	$file_name = $_FILES["fileToUpload"]["name"];
 	$tmp_file = $_FILES["fileToUpload"]["tmp_name"];
+	$date = $_FILES["date"];
+	$time = $_FILES["time"];
 	$extension = strchr($file_name,".");
 	if(move_uploaded_file($tmp_file,"../gallery_uploads/$id$extension")){
 		$img = "./gallery_uploads/$id$extension";
@@ -28,7 +30,7 @@
 	else{
 		$img = "";
 	}
-	$sql = "INSERT INTO media_gallery(media_id,caption,image,description) VALUES('".$m_id."','".$caption."','".$img."','".$description."')";
+	$sql = "INSERT INTO media_gallery(media_id,caption,image,description,date,time) VALUES('".$m_id."','".$caption."','".$img."','".$description."','".$date."','".$time."')";
 	$result = mysqli_query($conn,$sql);
 	if($result == 1){
 		header("location:upload_media.php");

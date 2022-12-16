@@ -23,7 +23,7 @@ include("./includes/connection.php");
 				<li class="current"><a href="home.php">Donations</a></li>
 				<li><a href="upload_media.php">Upload Media</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
-				<li><a href="events.php">Events</a></li>
+				<li><a href="events.php">Upcoming Events</a></li>
 				<li><a href="ngo_activities.php">NGO Activities</a></li>
 				<li class="log_btn"><a href="./logout.php">Logout</a></li>
 				<li class=""><a href="../index.php">Main</a></li>
@@ -52,7 +52,7 @@ include("./includes/connection.php");
 			$result = mysqli_query($conn, $sql);
 			while ($rs = mysqli_fetch_array($result)) {
 			?>
-				<div style="height:300px; width:350px; margin:20px; box-shadow:0 0 1px;">
+				<div style="height:300px; width:350px; margin:50px; box-shadow:0 0 1px;">
 					<h2><?php echo $rs['donar_name'] ?></h2>
 					<h4><?php echo $rs['donar_email'] ?></h4>
 					<p><?php echo $cat; ?></p>

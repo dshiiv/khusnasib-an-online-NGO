@@ -28,7 +28,7 @@ include("./includes/connection.php"); ?>
 				<li><a href="home.php">Donations</a></li>
 				<li><a href="upload_media.php">Upload Media</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
-				<li><a href="events.php">Events</a></li>
+				<li><a href="events.php">Upcoming Events</a></li>
 				<li class="current"><a href="ngo_activities.php">NGO Activities</a></li>
 				<li class="log_btn"><a href="./logout.php">Logout</a></li>
 				<li class=""><a href="../index.php">Main</a></li>

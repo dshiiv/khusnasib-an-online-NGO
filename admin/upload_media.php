@@ -22,7 +22,7 @@ include("./includes/connection.php");
 				<li><a href="home.php">Donations</a></li>
 				<li class="current"><a>Upload Events</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
-				<li><a href="events.php">Events</a></li>
+				<li><a href="events.php">Upcoming Events</a></li>
 				<li><a href="ngo_activities.php">NGO Activities</a></li>
 				<li class="log_btn"><a href="./logout.php">Logout</a></li>
 				<li class=""><a href="../index.php">Main</a></li>
@@ -39,10 +39,10 @@ include("./includes/connection.php");
 				<input type='file' name='fileToUpload' required>
 				<label>Description</label>
 				<textarea rows="5" cols="35" name="description" required></textarea>
-				<label>Date & Time</label>
+				<!-- <label>Date & Time</label>
 				<input type="date" name="date" required min="2019-01-01">
-				<input type="time" name="time" required>
-				<input type='submit' value='Upload'>
+				<input type="time" name="time" required> -->
+				<input type='submit' value='Upload' style="background-color:peachpuff; color: white; border-radius: 8px;">
 			</form>
 			<div class="stored">
 				<h4>uploaded media</h4>

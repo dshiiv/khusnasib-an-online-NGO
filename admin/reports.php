@@ -35,7 +35,7 @@
 				<li><a href="home.php">Donations</a></li>
 				<li><a href="upload_media.php">Upload Media</a></li>
 				<!-- <li><a href="news.php">News</a></li> -->
-				<li><a href="events.php">Events</a></li>
+				<li><a href="events.php">Upcoming Events</a></li>
 				<li class="current"><a href="ngo_activities.php">NGO Activities</a></li>
 				<li class="log_btn"><a href="./logout.php">Logout</a></li>
 				<li class=""><a href="../index.php">Main</a></li>
@@ -45,10 +45,10 @@
 	<div id="body">
 		<div class="ngo_activities">
 			<div>
-				<a style="width:auto;padding:30px 50px" id="top_five_report">Top Five Donor</a>
-				<a id="donation_report" style="width:auto;padding:30px 60px">Donations</a>
+				<!-- <a style="width:auto;padding:30px 50px" id="top_five_report">Top Five Donor</a> -->
+				<!-- <a id="donation_report" style="width:auto;padding:30px 60px">Donations</a> -->
 				<?php
-				//include("./donation_report.php");
+				include("./donation_report.php");
 				?>
 			</div>
 			<div id="show_report">

@@ -25,7 +25,7 @@ include("./includes/connection.php");
 				<?php
 				if (isset($_SESSION["user_id"])) {
 				?>
-					<li><a href="profile.php">profile</a></li>
+					<!-- <li><a href="profile.php">profile</a></li> -->
 					<li><a href="faq.php">FAQ</a></li>
 					<li><a href="donate.php">Donate</a></li>
 					<li class="log_btn"><a href="logout.php">Logout</a></li>
@@ -42,13 +42,12 @@ include("./includes/connection.php");
 	</div>
 	<div id="body">
 		<div id="gallery">
-			<div class="header" style="background-color:rebeccapurple;">
-				<div>
-					<h2></h2>
-					<p>
-					</p>
-				</div>
-				<img src="" height="250px" width="500px">
+			<div class="header" style="background-color:white; justify-content: space-evenly;">
+				<!-- <div>
+					<img src="./uploads/IMG-20220821-WA0018-01.jpeg.jpg" height="250px" width="400px">
+				</div> -->
+				<img src="./uploads/IMG-20220821-WA0018-01.jpeg.jpg" height="250px" width="400px">
+				<img src="./uploads/khusnasib.jpeg" height="250px" width="400px">
 			</div>
 			<div class="body">
 				<?php
@@ -60,9 +59,8 @@ include("./includes/connection.php");
 							<img class="image" src="<?php echo $fetch_products['image']; ?>" alt="image" width="100%" height="100%">
 							<p><?php echo $fetch_products['event_name']; ?></p>
 							<p><?php echo $fetch_products['event_description']; ?></p>
-							<p><?php echo $fetch_products['event_description']; ?></p>
-							<p><?php echo $fetch_products['event_description']; ?></p>
-							<p></p>
+							<p><?php echo $fetch_products['address']; ?></p>
+							<p><?php echo $fetch_products['duration']; ?></p>
 						</div>
 				<?php
 					}

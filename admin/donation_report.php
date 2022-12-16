@@ -22,7 +22,7 @@ include("./includes/connection.php");
 					"<option value='12'>December</option>")
 			} else if ($("#duration").val() == 2) {
 				$("#show_duration").html("<option value=''>Select Year</option>");
-				for (i = 2000; i <= 2016; i++) {
+				for (i = 2019; i <= 2022; i++) {
 					$("#show_duration").html($("#show_duration").html() +
 						"<option value='" + i + "'>" + i + "</option>");
 				}
@@ -46,14 +46,14 @@ include("./includes/connection.php");
 </script>
 
 <div style="width:600px; margin:0px auto;">
-	<!--<select id="duration">
+	<!-- <select id="duration">
 				<option value="0">Select Durations</option>
 				<option value="1">Monthly</option>
 				<option value="2">Yearly</option>
 			</select>
 			<select id="show_duration">
 				<option value="">Select Duration First</option>
-			</select>-->
+			</select> -->
 	<h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size:large ;">Donations Available & Donation Distributed</h3>
 	<hr>
 	<table>
@@ -72,11 +72,11 @@ include("./includes/connection.php");
 			<tr>
 				<td><?php echo $rs['name']; ?></td>
 				<?php
-				$donate_sql = "SELECT sum(items) FROM donation WHERE category_id='" . $rs['category_id'] . "'";
+				$donate_sql = "SELECT sum(avaliable) FROM categories WHERE category_id='" . $rs['category_id'] . "'";
 				$donate_result = mysqli_query($conn, $donate_sql);
 				$donate_rs = mysqli_fetch_array($donate_result);
 				?>
-				<td id="no_data"><?php echo $donate_rs['sum(items)']; ?></td>
+				<td id="no_data"><?php echo $donate_rs['sum(avaliable)']; ?></td>
 				<?php
 				$distribute_sql = "SELECT sum(counts) FROM distributions WHERE category_id='" . $rs['category_id'] . "'";
 				$distribute_result = mysqli_query($conn, $distribute_sql);

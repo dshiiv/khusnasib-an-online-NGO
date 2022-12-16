@@ -36,7 +36,7 @@
 				<?php
 				if (isset($_SESSION["user_id"])) {
 				?>
-					<li><a href="profile.php">profile</a></li>
+					<!-- <li><a href="profile.php">profile</a></li> -->
 					<li class="login"><a href="logout.php">Logout</a></li>
 				<?php
 				} else {

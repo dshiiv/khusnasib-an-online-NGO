@@ -23,7 +23,7 @@
 	$answer = $_POST["answer"];
 
 	$sql = "INSERT INTO user_data(user_id,first_name,email,password,security_que,answer) VALUES('".$user_id."','".$name."','".$email."','".$password."','".$question."','".$answer."')";
-	$q=mysqli_query($conn,$sql);
+	$q = mysqli_query($conn,$sql);
 	if($q == 1){
 		session_start();	
 		$sql = "SELECT * FROM user_data WHERE user_id='".$user_id."'";
@@ -34,7 +34,7 @@
 		header("location:./index.php");
 	}
 	else{
-		header("location:./error/insert_error.php");
+		header("location:./insert_error.php");
 	}
 	mysqli_close($conn);
 ?>
